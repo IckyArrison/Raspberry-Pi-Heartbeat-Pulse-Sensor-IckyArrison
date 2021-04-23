@@ -12,7 +12,7 @@ try:
     # Run forever
     while True:
         # Prompt user for input and store key pressed
-        input = input("\n\nReady to measure Heartbeat (y/n)?")
+        input = 'y' #input("\n\nReady to measure Heartbeat (y/n)?")
         # If user pressed 'y'
         if input == 'y':
             # Get current date & time
@@ -30,10 +30,10 @@ try:
                     # If bpm found
                     if bpm > 0:
                         # Format BPM save in line variable
-                        line = "BPM: %d" % bpm
+                        line = "BPM: %d\n" % bpm
                     else:
                         # Not found message
-                        line = "No Heartbeat found"
+                        line = "No Heartbeat found\n"
                     # Print line to console
                     print(line)
                     # Append line to file
